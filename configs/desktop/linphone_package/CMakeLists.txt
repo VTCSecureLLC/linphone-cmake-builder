@@ -49,11 +49,6 @@ file(REMOVE_RECURSE "${LINPHONE_SDK_TMP}")
 file(COPY "${LINPHONE_OUTPUT_DIR}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
 file(RENAME "${CMAKE_CURRENT_BINARY_DIR}/desktop" "${LINPHONE_SDK_TMP}")
 if(APPLE)
-	set(LINPHONE_SDK_TMP "${CMAKE_CURRENT_BINARY_DIR}/linphone-sdk-tmp")
-	file(REMOVE_RECURSE "${LINPHONE_SDK_TMP}")
-	file(COPY "${LINPHONE_OUTPUT_DIR}" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
-	file(RENAME "${CMAKE_CURRENT_BINARY_DIR}/OUTPUT" "${LINPHONE_SDK_TMP}")
-
 	file(COPY
 		/usr/local/opt/gettext/lib/libintl.8.dylib
 		/usr/local/opt/gettext/lib/libintl.dylib
