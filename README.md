@@ -1,5 +1,4 @@
 # LINPHONE CMAKE BUILDER #
-
 Linphone CMake builder is a structure based on CMake to build linphone and
 flexisip on various platforms.
 
