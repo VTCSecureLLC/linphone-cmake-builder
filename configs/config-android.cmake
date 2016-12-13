@@ -118,6 +118,9 @@ if(NOT ENABLE_EMBEDDED_OPENH264)
 	lcb_builder_linking_type(openh264 "-shared")
 endif()
 
+# openh264
+set(EP_openh264_LINKING_TYPE "-shared")
+
 # opus
 lcb_builder_cmake_options(opus "-DENABLE_FIXED_POINT=YES")
 
